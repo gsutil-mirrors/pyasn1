@@ -97,7 +97,7 @@ class AbstractConstraint(object):
 
 
 class SingleValueConstraint(AbstractConstraint):
-    """Create a SingleValueConstraint object.
+    r"""Create a SingleValueConstraint object.
 
     The SingleValueConstraint satisfies any value that
     is present in the set of permitted values.
@@ -138,7 +138,7 @@ class SingleValueConstraint(AbstractConstraint):
 
 
 class ContainedSubtypeConstraint(AbstractConstraint):
-    """Create a ContainedSubtypeConstraint object.
+    r"""Create a ContainedSubtypeConstraint object.
 
     The ContainedSubtypeConstraint satisfies any value that
     is present in the set of permitted values and also
@@ -298,7 +298,7 @@ class ValueSizeConstraint(ValueRangeConstraint):
 
 
 class PermittedAlphabetConstraint(SingleValueConstraint):
-    """Create a PermittedAlphabetConstraint object.
+    r"""Create a PermittedAlphabetConstraint object.
 
     The PermittedAlphabetConstraint satisfies any character
     string for as long as all its characters are present in
@@ -454,7 +454,7 @@ class AbstractConstraintSet(AbstractConstraint):
 
 
 class ConstraintsIntersection(AbstractConstraintSet):
-    """Create a ConstraintsIntersection logic operator object.
+    r"""Create a ConstraintsIntersection logic operator object.
 
     The ConstraintsIntersection logic operator only succeeds
     if *all* its operands succeed.
@@ -498,7 +498,7 @@ class ConstraintsIntersection(AbstractConstraintSet):
 
 
 class ConstraintsUnion(AbstractConstraintSet):
-    """Create a ConstraintsUnion logic operator object.
+    r"""Create a ConstraintsUnion logic operator object.
 
     The ConstraintsUnion logic operator only succeeds if
     *at least a single* operand succeeds.
