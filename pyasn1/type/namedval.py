@@ -12,7 +12,7 @@ __all__ = ['NamedValues']
 
 
 class NamedValues(object):
-    """Create named values object.
+    r"""Create named values object.
 
     The |NamedValues| object represents a collection of string names
     associated with numeric IDs. These objects are used for giving
